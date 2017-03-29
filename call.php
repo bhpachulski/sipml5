@@ -108,7 +108,7 @@
         var callId;
 
     // "Info"
-    debugLevel = "Info";
+    debugLevel = "error";
 
     C = { divKeyPadWidth: 220 };
 
@@ -851,7 +851,7 @@
                 </h2>
                 <br />
 
-                <input type="button" class="btn btn-success" id="btnRegister" value="LogIn" disabled onclick="sipRegister('10.1.0.107', '6001', 'sip:6001@10.1.0.107', '123456', 'Webcall', 'wss://10.1.0.107:8089/ws', '[]');" />
+                <input type="button" class="btn btn-success" id="btnRegister" value="LogIn" disabled onclick="sipRegister('10.1.0.107', '6001', 'sip:6001@10.1.0.107', '123456', 'Webcall', 'ws://10.1.0.107:8088/ws', '[]');" />
 
                 <input type="button" class="btn btn-danger" id="btnUnRegister" value="LogOut" disabled onclick='sipUnRegister();' />
 
