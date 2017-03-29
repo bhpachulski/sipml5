@@ -800,13 +800,11 @@
                         break;
                     }
 
-                case 'i_new_call':
-                    {
+                case 'i_new_call': {
                         if (oSipSessionCall) {
                             // do not accept the incoming call if we're already 'in call'
                             e.newSession.hangup(); // comment this line for multi-line support
-                        }
-                        else {
+                        } else {
                             oSipSessionCall = e.newSession;
                             // start listening for events
                             oSipSessionCall.setConfiguration(oConfigCall);
@@ -825,14 +823,12 @@
                         break;
                     }
 
-                case 'm_permission_requested':
-                    {
+                case 'm_permission_requested': {
                         divGlassPanel.style.visibility = 'visible';
                         break;
                     }
                 case 'm_permission_accepted':
-                case 'm_permission_refused':
-                    {
+                case 'm_permission_refused': {
                         divGlassPanel.style.visibility = 'hidden';
                         if (e.type == 'm_permission_refused') {
                             uiCallTerminated('Media stream permission denied');
